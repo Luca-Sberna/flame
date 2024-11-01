@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import Heading from './components/Heading';
+import ImageGrid from './components/ImageGrid';
+import Title from './components/Title';
+import Bars from './components/Bars';
+import ParallaxImages from './components/ParallaxImages';
+import Staggared from './components/Staggared';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="wrapper">
+      <div id="content">
+        <Heading />
+        <ImageGrid />
+        <Title />
+        <Bars />
+        <ParallaxImages />
+        <Staggared />
+      </div>
     </div>
   );
 }
